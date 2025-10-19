@@ -1,0 +1,16 @@
+﻿using HotelProjectt.EntityLayer.Concrete;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace HotelProjectt.DataAccessLayer.Abstract
+{
+    public interface IAppUserDal:IGenericDal<AppUser>
+    {
+        List<AppUser> UserListWorkLocation();
+        List<AppUser> UserListWorkLocations();
+        int AppUserCount();
+    }
+}
